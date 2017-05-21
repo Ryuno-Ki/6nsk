@@ -1,0 +1,265 @@
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>Halium-Vortrag auf der 6. No-Spy-Konferenz</title>
+        <link rel="stylesheet" href="css/reveal.css" />
+        <link rel="stylesheet" href="css/theme/white.css" />
+        <link rel="stylesheet" href="css/slides.css" />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>Halium</h1>
+                    <p>6. No-Spy-Konferenz (19. - 21. Mai 2017)</p>
+                    <p>
+                        <img alt="Creative Commons Attribution Share-Alike"
+                             style="border-width:0"
+                             src="img/cc-by-sa.png" />
+                        André Jaenisch
+                    </p>
+                </section>
+                <section>
+                    <section>
+                        <h1>Was ist Halium?</h1>
+                    </section>
+                    <section>
+                        <p>
+                            Halium ist ein kollaboratives Projekt, um die HAL
+                            für Projekte, welche GNU/Linux auf Mobilgeräten mit
+                            vorinstalliertem Android zu vereinheitlichen.
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Damit können verschiedene RootFS von
+                            unterschiedlichen GNU/Linux-Distributionen
+                            genutzt werden. Das heißt, es muss nur einmal
+                            portiert werden.
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Halium beinhaltet:
+                            <ul>
+                                <li>Linux kernel (Quellcode vom Hersteller)</li>
+                                <li>
+                                    Android-Dienste, um mit Hardware zu sprechen
+                                    (läuft in einem LXC-Container)
+                                </li>
+                                <li>Libhybris für Treiber</li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Daneben versucht Halium, Middleware zu
+                            standardisieren:
+                            <ul>
+                                <li>OFono, RILd (Telefonie, SMS)</li>
+                                <li>Kamera</li>
+                                <li>PulseAudio, AudioFingerGlue</li>
+                                <li>GPS</li>
+                                <li>Media Codecs</li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <img src="img/architecture.png" alt="Architektur" />
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Warum gibt es Halium?</h1>
+                    </section>
+                    <section>
+                        <p>
+                            Custom-ROM-Entwickler haben HAL-Code immer wieder
+                            neu zu schreiben. Halium schafft eine gemeinsame
+                            Basis.
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Ausgelöst durch Einstellen von Alternativen zu
+                            Android (Firefox OS, Ubuntu Touch).
+                        </p>
+                    </section>
+                    <section>
+                        <p>Telegram-Gruppe am 9. April gegründet.</p>
+                        <p>
+                            Zunächst dann über ein Google Doc Ideen
+                            zusammengetragen.
+                        </p>
+                        <p>Später Video-Calls</p>
+                        <p>Aktuell separater Channel für Entwickler</p>
+                        <p>Offizielle Bekanntgabe am 23. April</p>
+                    </section>
+                    <section>
+                        <img src="img/how-standards-proliferate.png"
+                             alt="Wie Standards entstehen - XKCD" />
+                    </section>
+                    <section>
+                        <img src="img/how-halium-wants-to-proliferate.png"
+                             alt="Wie Halium sich entwickeln will" />
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Wer arbeitet an Halium?</h1>
+                    </section>
+                    <section>
+                        <p>
+                            <ul>
+                                <li>AsteriodOS</li>
+                                <li>LuneOS</li>
+                                <li>Mer</li>
+                                <li>Plasma Mobile</li>
+                                <li>SailfishOS</li>
+                                <li>Ubuntu Touch</li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Konkret
+                            <ul>
+                                <li>Bhushan Shah</li>
+                                <li>Marius Gripsgard</li>
+                                <li>Topias Vainio</li>
+                                <li>Aleksi Suomalainen</li>
+                                <li>Lewis Rockliffe</li>
+                                <li>Michaël Serpieri</li>
+                                <li>Rohan Garg</li>
+                                <li>JBB</li>
+                            </ul>
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Was ist der aktuelle Stand von Halium?</h1>
+                    </section>
+                    <section>
+                        <img src="img/egl-on-halium.jpg"
+                             alt="EGL-Demo auf Halium" />
+                    </section>
+                    <section>
+                        <p>
+                            Zu sehen ist ein Ubuntu 16.04 mit SystemD als
+                            Init-System. Darauf läuft ein Android 5 in einem
+                            LXC-Container und einige LibHybris-Tests sind
+                            erfolgreich.
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Wie kann ich zu Halium beitragen?</h1>
+                    </section>
+                    <section>
+                        <p>
+                            Als Referenz-Gerät wird Nexus 5 („Hammerhead”)
+                            genutzt. Damit wird auf Android 5 aufgesetzt.
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            High-Level Übersicht unter
+                            <a href="https://github.com/Halium/docs/blob/master/Planning.md">
+                                https://github.com/Halium/docs/blob/master/Planning.md
+                            </a>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Technischer Plan unter
+                            <a href="https://github.com/Halium/docs/blob/master/Development.md">
+                                https://github.com/Halium/docs/blob/master/Development.md
+                            </a>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Bloggt über das Projekt!
+                            Ein Presse-Spiegel findet sich unter
+                            <a href="https://github.com/Halium/halium.org/issues/10#issuecomment-298306780">
+                                https://github.com/Halium/halium.org/issues/10#issuecomment-298306780
+                            </a>.
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Wo finde ich mehr Informationen zu Halium?</h1>
+                    </section>
+                    <section>
+                        <p>
+                            <ul>
+                                <li>halium.org im Internet</li>
+                                <li>#halium auf Freenode</li>
+                                <li>@halium auf Telegram</li>
+                                <li>#halium:matrix.org auf Matrix</li>
+                                <li>@HaliumProject auf Twitter</li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <p>Auf der nächsten DebConf 17</p>
+                        <p>Daher Debian Mobile Mailing List oder IRC-Channel</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <p>
+                            Vielen Dank für die Aufmerksamkeit
+                        </p>
+                    </section>
+                    <section>
+                        <h1>Bildnachweis</h1>
+                        <p>
+                            <ul>
+                                <li>
+                                    Architektur:
+                                    <a href="https://github.com/Halium/halium.org/blob/38d2ea9760fab4c690bc471997ce1586791cf41f/img/architecture.png">
+                                        https://github.com/Halium/halium.org/blob/38d2ea9760fab4c690bc471997ce1586791cf41f/img/architecture.png
+                                    </a>
+                                </li>
+                                <li>
+                                    EGL-Demo-Screenshot von Bhushan Shah
+                                </li>
+                                <li>
+                                    XKCD-Comic:
+                                    <a href="https://xkcd.com/927/">
+                                        https://xkcd.com/927/
+                                    </a>
+                                </li>
+                                <li>
+                                    Angepasster XKCD-Comic von:
+                                    David Edmundson (KDE)
+                                </li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Slides auf GitHub
+                        </p>
+                        <p>
+                            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="img/cc-by-sa.png" />
+                            </a><br />
+                            Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                                Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz
+                            </a>.
+                        </p>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <script src="js/reveal.js"></script> 
+        <script>
+            Reveal.initialize();
+        </script> 
+    </body>
+</html>
