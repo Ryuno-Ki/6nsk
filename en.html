@@ -23,45 +23,39 @@
                     <section>
                         <h1>What is Halium?</h1>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Halium is a collaborative project in order to unify
                             the HAL for projects, which bring GNU/Linux to
                             mobiles with preinstalled Android.
-                        </p>
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Using it enables the usage of different rootfs
                             of different GNU/Linux distributions, i.e. it has
                             to be ported only once.
-                        </p>
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Halium contains:
-                            <ul>
-                                <li>Linux kernel (source code by OEM)</li>
-                                <li>
-                                    Android services for talking with the
-                                    hardware (runs inside a LXC container)
-                                </li>
-                                <li>Libhybris for drivers</li>
-                            </ul>
-                        </p>
+                            * Linux kernel (source code by OEM)
+                            * Android services for talking with the hardware
+                              (runs inside a LXC container)
+                            * libhybris for drivers
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Next to that, Halium tries to standardise
                             middleware:
-                            <ul>
-                                <li>OFono, RILd (telephony, SMS)</li>
-                                <li>camera</li>
-                                <li>PulseAudio, AudioFlingerGlue</li>
-                                <li>GPS</li>
-                                <li>Media Codecs</li>
-                            </ul>
-                        </p>
+                            * OFono, RILd (telephony, SMS)
+                            * camera
+                            * PulseAudio, AudioFlingerGlue
+                            * GPS
+                            * Media Codecs
+                        </textarea>
                     </section>
                     <section>
                         <img src="img/architecture.png" alt="architecture" />
@@ -71,31 +65,33 @@
                     <section>
                         <h1>Why is Halium needed?</h1>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Custom ROM developers are tasked to rewrite
                             HAL code time and again. Halium creates a common
                             base.
-                        </p>
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Triggered by shutting down of alternatives to
                             Android (Firefox OS, Ubuntu Touch).
-                        </p>
+                        </textarea>
                     </section>
-                    <section>
-                        <p>Telegram group was created at 9th April.</p>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
+                            Telegram group was created at 9th April.
+
                             In the beginning, ideas were collected in a
                             Google doc.
-                        </p>
-                        <p>Later video calls were held.</p>
-                        <p>
+
+                            Later video calls were held.
+
                             Currently there is a dedicated channel for
                             developers.
-                        </p>
-                        <p>Official announcement on 23rd April</p>
+
+                            Official announcement on 23rd April
+                        </textarea>
                     </section>
                     <section>
                         <img src="img/how-standards-proliferate.png"
@@ -110,32 +106,28 @@
                     <section>
                         <h1>Who is working on Halium?</h1>
                     </section>
-                    <section>
-                        <p>
-                            <ul>
-                                <li>AsteroidOS</li>
-                                <li>LuneOS</li>
-                                <li>Mer</li>
-                                <li>Plasma Mobile</li>
-                                <li>SailfishOS</li>
-                                <li>Ubuntu Touch</li>
-                            </ul>
-                        </p>
+                    <section data-markdown>
+                        <textarea data-template>
+                            * AsteroidOS
+                            * LuneOS
+                            * Mer
+                            * Plasma Mobile
+                            * SailfishOS
+                            * Ubuntu Touch
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Concretely:
-                            <ul>
-                                <li>Bhushan Shah</li>
-                                <li>Marius Gripsgard</li>
-                                <li>Topias Vainio</li>
-                                <li>Aleksi Suomalainen</li>
-                                <li>Lewis Rockliffe</li>
-                                <li>Michaël Serpieri</li>
-                                <li>Rohan Garg</li>
-                                <li>JBB</li>
-                            </ul>
-                        </p>
+                            * Bhushan Shah
+                            * Marius Gripsgard
+                            * Topias Vainio
+                            * Aleksi Suomalainen
+                            * Lewis Rockliffe
+                            * Michaël Serpieri
+                            * Rohan Garg
+                            * JBB
+                        </textarea>
                     </section>
                 </section>
                 <section>
@@ -146,129 +138,112 @@
                         <img src="img/halium-on-android.jpg"
                              alt="EGL-Demo on Halium" />
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             You can see an Ubuntu 16.04 with systemd as init
                             system. On top of it runs an Android 5 inside a
                             LXC container and some libhybris tests are passing.
-                        </p>
+                        </textarea>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h1>How can I contribute to Halium?</h1>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             A Nexus 5 („Hammerhead”) with Android 5.1 is used
                             as reference device.
-                        </p>
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             High-level overview on
-                            <a href="https://github.com/Halium/docs/blob/master/Planning.md">
-                                https://github.com/Halium/docs/blob/master/Planning.md
-                            </a>
-                        </p>
+                            [https://github.com/Halium/docs/blob/master/Planning.md](https://github.com/Halium/docs/blob/master/Planning.md)
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Technical plan on
-                            <a href="https://github.com/Halium/docs/blob/master/Development.md">
-                                https://github.com/Halium/docs/blob/master/Development.md
-                            </a>
-                        </p>
+                            [https://github.com/Halium/docs/blob/master/Development.md](https://github.com/Halium/docs/blob/master/Development.md)
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Blog about the project!
+
                             A press review is available on
-                            <a href="https://github.com/Halium/halium.org/issues/10#issuecomment-298306780">
-                                https://github.com/Halium/halium.org/issues/10#issuecomment-298306780
-                            </a>.
-                        </p>
+                            [https://github.com/Halium/halium.org/issues/10#issuecomment-298306780](https://github.com/Halium/halium.org/issues/10#issuecomment-298306780).
+                        </textarea>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h1>Where can I find more information about Halium?</h1>
                     </section>
-                    <section>
-                        <p>
-                            <ul>
-                                <li>halium.org on the Internet</li>
-                                <li>#halium on Freenode</li>
-                                <li>@halium on Telegram</li>
-                                <li>#halium:matrix.org on Matrix</li>
-                                <li>@HaliumProject on Twitter</li>
-                            </ul>
-                        </p>
+                    <section data-markdown>
+                        <textarea data-template>
+                            * halium.org on the Internet
+                            * #halium on Freenode
+                            * @halium on Telegram
+                            * #halium:matrix.org on Matrix
+                            * @HaliumProject on Twitter
+                        </textarea>
                     </section>
-                    <section>
-                        <p>On the next DebConf 17</p>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
+                            On the next DebConf 17
+
                             Due to that Debian Mobile Mailing List or IRC
                             channel
-                        </p>
+                        </textarea>
                     </section>
                 </section>
                 <section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Thanks for listening
-                        </p>
+                        </textarea>
                     </section>
-                    <section>
-                        <h1>Image credits</h1>
-                        <p>
-                            <ul>
-                                <li>
-                                    architecture
-                                    <a href="https://github.com/Halium/halium.org/blob/38d2ea9760fab4c690bc471997ce1586791cf41f/img/architecture.png">
-                                        https://github.com/Halium/halium.org/blob/38d2ea9760fab4c690bc471997ce1586791cf41f/img/architecture.png
-                                    </a>
-                                </li>
-                                <li>
-                                    Halium on Android by Bhushan Shah
-                                    <a href="https://twitter.com/HaliumProject/status/865883744376209408">
-                                        https://twitter.com/HaliumProject/status/865883744376209408
-                                    </a>
-                                </li>
-                                <li>
-                                    XKCD Comic
-                                    <a href="https://xkcd.com/927/">
-                                        https://xkcd.com/927/
-                                    </a>
-                                </li>
-                                <li>
-                                    Adapted XKCD comic by David Edmundson (KDE)
-                                </li>
-                            </ul>
-                        </p>
+                    <section data-markdown>
+                        <textarea data-template>
+                            # Image credits
+
+                            * architecture
+                              [https://github.com/Halium/halium.org/blob/38d2ea9760fab4c690bc471997ce1586791cf41f/img/architecture.png](https://github.com/Halium/halium.org/blob/38d2ea9760fab4c690bc471997ce1586791cf41f/img/architecture.png)
+                            * Halium on Android by Bhushan Shah
+                              [https://twitter.com/HaliumProject/status/865883744376209408](https://twitter.com/HaliumProject/status/865883744376209408)
+                            * XKCD Comic
+                              [https://xkcd.com/927/](https://xkcd.com/927/)
+                            * Adapted XKCD comic by David Edmundson (KDE)
+                        </textarea>
                     </section>
-                    <section>
-                        <p>
+                    <section data-markdown>
+                        <textarea data-template>
                             Slides on GitHub:
-                            <a href="https://ryuno-ki.github.io/6nsk/">
-                               https://ryuno-ki.github.io/6nsk/
-                            </a>
-                        </p>
-                        <p>
+                            [https://ryuno-ki.github.io/6nsk/](https://ryuno-ki.github.io/6nsk/)
+
                             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
                                 <img alt="Creative Commons license contract" style="border-width:0" src="img/cc-by-sa.png" />
                             </a><br />
                             This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
                                 Creative Commons Attribution - Share Alike 4.0 International License
                             </a>.
-                        </p>
+                        </textarea>
                     </section>
                 </section>
             </div>
         </div>
-        <script src="js/reveal.js"></script> 
-        <script>
-            Reveal.initialize();
+        <script type="text/javascript" src="lib/js/head.min.js"></script>
+        <script type="text/javascript" src="js/reveal.js"></script>
+        <script type="text/javascript">
+            Reveal.initialize({
+                dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                ]
+            });
         </script> 
     </body>
 </html>
